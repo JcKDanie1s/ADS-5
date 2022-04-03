@@ -5,12 +5,12 @@
 template<typename T, int size>
 class TStack {
 private:
-T arr[20];
+Tarr[20];
 int top;
 
 public:
-TStack() : top(-1) { }
-T get() const {
+TStack():top(-1) { }
+Tget() const {
 return arr[top];
 }
 bool isEmpty() const {
