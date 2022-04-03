@@ -20,7 +20,7 @@ bool isFull() const {
 return top == size - 1;
 }
 void pop() {
-if (top > 0)
+if (top >= 0)
 top--;
 }
 void push(T item) {
