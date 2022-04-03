@@ -5,12 +5,12 @@
 template<typename T, int size>
 class TStack {
 private:
-Tarr[20];
+T arr[20];
 int top;
 
 public:
 TStack():top(-1) { }
-Tget() const {
+T get() const {
 return arr[top];
 }
 bool isEmpty() const {
@@ -20,7 +20,7 @@ bool isFull() const {
 return top == size - 1;
 }
 void pop() {
-if (top >= 0)
+if (top > 0)
 top--;
 }
 void push(T item) {
